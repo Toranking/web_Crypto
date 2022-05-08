@@ -1,4 +1,4 @@
-/* Global */
+/*Global*/
 
 :root {
   /* Color */
@@ -202,13 +202,13 @@ p {
 }
 
 /*About*/
-.about_majors {
+.about_rankings {
   display: flex;
   justify-content: space-between;
   margin: 80px 0;
 }
 
-.major_icon {
+.ranking_icon {
   width: 170px;
   height: 170px;
   line-height: 170px;
@@ -220,21 +220,21 @@ p {
   margin-bottom: 16px;
 }
 
-.major_icon i {
+.ranking_icon i {
   transition: all var(--animation-duration) ease;
 }
 
-.major_icon:hover i {
+.ranking_icon:hover i {
   color: var(--color-dark-grey);
   transform: rotate(-30deg) scale(1.1);
 }
 
-.major_title,
-.major_description {
+.ranking_title,
+.ranking_description {
   color: var(--color-dark-grey);
 }
 
-.major_description {
+.ranking_description {
   font-size: var(--font-small);
 }
 
@@ -261,48 +261,48 @@ p {
   font-size: var(--font-micro);
 }
 
-#skills {
+#notices {
   background-color: var(--color-yellow);
 }
 
-.skillset {
+.noticeset {
   display: flex;
   background-color: var(--color-light-grey);
   color: var(--color-light-white);
   margin: 20px 0;
 }
 
-.skilset_title {
+.noticeset_title {
   color: var(--color-white);
 }
 
-.skilset_left {
+.noticeset_left {
   flex-basis: 60%;
   background-color: var(--color-dark-grey);
   padding: 20px 40px;
 }
 
-.skill {
+.notice {
   margin-bottom: 32px;
 }
 
-.skill_description {
+.notice_description {
   display: flex;
   justify-content: space-between;
 }
 
-.skill_bar {
+.notice_bar {
   width: 100%;
   height: 3px;
   background-color: var(--color-grey);
 }
 
-.skill_value {
+.notice_value {
   height: 3px;
   background-color: var(--color-orange);
 }
 
-.skillset_right {
+.noticeset_right {
   flex-basis: 40%;
 }
 
@@ -315,9 +315,9 @@ p {
   padding: 20px;
 }
 
-/*work*/
+/*diplomacy*/
 
-.work_categories {
+.diplomacy_categories {
   margin: 40px;
 }
 
@@ -356,7 +356,7 @@ p {
   transition: all var(--animation-duration) ease-in;
 }
 
-.work_projects {
+.diplomacy_alliances {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -364,12 +364,12 @@ p {
   transition: all var(--animation-duration) ease-out;
 }
 
-.work_projects.anim-out {
+.diplomacy_alliances.anim-out {
   opacity: 0;
   transform: scale(0.95) translateY(40px);
 }
 
-.project {
+.alliance {
   position: relative;
   display: flex;
   justify-content: center;
@@ -380,16 +380,16 @@ p {
   background-color: var(--color-white);
 }
 
-.project.invisible {
+.alliance.invisible {
   display: none;
 }
 
-.project_img {
+.alliance_img {
   max-width: 100%;
   max-height: 100%;
 }
 
-.project_description {
+.alliance_description {
   position: absolute;
   background-color: black;
   display: flex;
@@ -404,16 +404,16 @@ p {
   transition: all var(--animation-duration) ease-in;
 }
 
-.project:hover .project_description {
+.alliance:hover .alliance_description {
   opacity: 0.8;
   transform: translateY(0px);
 }
 
-.project_description h3 {
+.alliance_description h3 {
   color: var(--color-orange);
 }
 
-.project_description h3:after {
+.alliance_description h3:after {
   content: "";
   display: block;
   position: relative;
@@ -426,37 +426,37 @@ p {
   background-color: var(--color-dark-white);
 }
 
-/*Testimonial*/
-#testimonials {
+/*member*/
+#members {
   background-color: var(--color-light-white);
 }
 
-.testimonials {
+.members {
   margin: 40px;
 }
 
-.testimonial {
+.member {
   display: flex;
   margin: 32px 0;
   align-items: center;
 }
 
-.testimonials_avatar {
+.members_avatar {
   width: 150px;
   height: 150px;
 
   /*background-color: var(--color-blue);*/
 }
 
-.testimonials_avatar:nth-child(odd) {
+.members_avatar:nth-child(odd) {
   margin-right: 40px;
 }
 
-.testimonials_avatar:nth-child(even) {
+.members_avatar:nth-child(even) {
   margin-left: 40px;
 }
 
-.testimonial_speech-bubble {
+.member_speech-bubble {
   
   padding: 18px;
   background-color: var(--color-white);
@@ -464,11 +464,11 @@ p {
   width: 100%;
 }
 
-.testimonial_speech-bubble p {
+.member_speech-bubble p {
   color: var(--color-light-grey);
 }
 
-.testimonial_speech-bubble a {
+.member_speech-bubble a {
   color: var(--color-black);
 }
 
@@ -566,17 +566,17 @@ p {
     padding-top: 40px;
   }
 
-  .about_majors {
+  .about_rankings {
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: 0px;
   }
 
-  .major {
+  .ranking {
     margin-bottom: 30px;
   }
 
-  .skillset {
+  .noticeset {
     flex-direction: column;
   }
 
@@ -585,27 +585,27 @@ p {
     width: 100%;
   }
 
-  .project {
+  .alliance {
     flex-grow: 1;
   }
 
-  .testimonial {
+  .member {
     flex-direction: column;
     align-items: center;
   }
 
-  .testimonials_avatar {
+  .members_avatar {
     width: 120px;
     height: 120px;
   }
 
-  .testimonials_avatar:nth-child(even),
-  .testimonials_avatar:nth-child(odd) {
+  .members_avatar:nth-child(even),
+  .members_avatar:nth-child(odd) {
     margin: 0;
     margin-bottom: 8px;
   }
 
-  .testimonials_speech-bubble {
+  .members_speech-bubble {
     order: 1;
   }
 

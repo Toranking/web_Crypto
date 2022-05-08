@@ -45,10 +45,10 @@ homeContactBtn.addEventListener('click', () => {
 
 
 
-//projects 버튼 클릭시 해당 프로젝트가 보이게
-const workBtnContainer = document.querySelector('.work_categories');
-const projectContainer = document.querySelector('.work_projects');
-const projects = document.querySelectorAll('.project');
+//alliances 버튼 클릭시 해당 프로젝트가 보이게
+const workBtnContainer = document.querySelector('.diplomacy_categories');
+const allianceContainer = document.querySelector('.diplomacy_alliances');
+const alliances = document.querySelectorAll('.alliance');
 workBtnContainer.addEventListener('click', (e) => {
     
     const filter = e.target.dataset.filter;
@@ -61,18 +61,18 @@ workBtnContainer.addEventListener('click', (e) => {
                         e.target.parentNode;
     targer.classList.add('selected');
     
-    projectContainer.classList.add('anim-out');
+    allianceContainer.classList.add('anim-out');
     
     setTimeout(() => {
-        projects.forEach((project) => {
+        alliances.forEach((alliance) => {
             
-            if (filter === '*' || filter === project.dataset.type) {
-                project.classList.remove('invisible');
+            if (filter === '*' || filter === alliance.dataset.type) {
+                alliance.classList.remove('invisible');
             } else {
-                project.classList.add('invisible');
+                alliance.classList.add('invisible');
             }
         });    
-        projectContainer.classList.remove('anim-out');
+        allianceContainer.classList.remove('anim-out');
     }, 300);
     
     
