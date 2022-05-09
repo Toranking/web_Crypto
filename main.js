@@ -84,3 +84,22 @@ function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: "smooth"});
 }
+
+
+//시계
+const clock = document.querySelector('.UTCTime');
+
+function getTime(){
+    const time = new Date();
+    const hour = time.getUTCHours();
+    const min = time.getUTCMinutes();
+    const sec = time.getUTCSeconds();
+
+    clock.innerHTML = 'UTC : ' +`${hour<10 ? `0${hour}`:hour}:${min<10 ? `0${min}`:min}:${sec<10 ? `0${sec}`:sec}`
+}
+
+function init(){
+    setInterval(getTime, 100);
+}
+
+init();
