@@ -469,7 +469,6 @@ p {
 }
 
 .member_speech-bubble {
-  
   padding: 18px;
   background-color: var(--color-white);
   border-radius: var(--size-border-radius);
@@ -510,6 +509,43 @@ p {
   transform: scale(1.1);
   color: var(--color-black);
 }
+
+.contact_Links a:hover {
+  transform: scale(1.1);
+  color: var(--color-black);
+}
+
+/*selective*/
+
+/* #selective {
+  background-color: var(--color-blue);
+} */
+
+.selective_title,
+.selective_email,
+.selective_rights {
+  color: var(--color-black);
+}
+
+.selective_title {
+  margin: 32px 0;
+}
+
+.selective_Links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+  transition: all var(--animation-duration) ease-in;
+}
+
+.selective_Links a {
+  color: var(--color-black);
+}
+
+.selective_Links a:hover {
+  transform: scale(1.1);
+  color: var(--color-blue);
+}
+
 
 /*scroll*/
 .arrow-up {
