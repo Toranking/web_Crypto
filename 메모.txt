@@ -1,0 +1,14 @@
+아르마다 함대 : armada fleet
+요격편대 interceptor squadron
+아르마다 기지 armada base
+무역 trade
+
+선점퀘스트 competition quest
+
+
+alliance combat power rank
+alliance victory rank
+alliance armada base victory rank
+alliance city conquest rank
+
+연합공지 아래에 도시점령 시간표 추가
